@@ -3,74 +3,294 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FAQ - Your Site</title>
+  <title>FAQ - Scooter Hack</title>
   <style>
-    /* Basic CSS for FAQ Template */
+    /* CSS Variables for Colors and Fonts */
+    :root {
+      --primary-color: #007BFF;       /* Blue */
+      --secondary-color: #6C757D;     /* Grey */
+      --background-color: #f0f4f8;      /* Light grey-blue background */
+      --card-background: #fff;        /* White card background */
+      --font-family: 'Arial', sans-serif;
+    }
+
+    /* Global Styles */
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      line-height: 1.6;
+      font-family: var(--font-family);
+      background: var(--background-color);
+      color: #333;
     }
     .container {
-      width: 90%;
       max-width: 800px;
       margin: 40px auto;
-      background: #fff;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    h1 {
+    .header {
       text-align: center;
       margin-bottom: 30px;
     }
+
+    /* Language Toggle */
+    .language-toggle {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .language-toggle button {
+      background: var(--primary-color);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .language-toggle button:hover {
+      background: #0056b3;
+    }
+
+    /* FAQ Item Styles */
     .faq-item {
-      border-bottom: 1px solid #ddd;
+      background: var(--card-background);
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .faq-item:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
     .faq-question {
-      background: #eee;
-      padding: 15px;
-      margin: 0;
+      background: var(--primary-color);
+      color: #fff;
+      padding: 15px 20px;
       cursor: pointer;
-      font-weight: bold;
+      margin: 0;
+      font-size: 18px;
     }
     .faq-answer {
+      padding: 15px 20px;
       display: none;
-      padding: 15px;
+      border-top: 1px solid #ddd;
+      font-size: 16px;
+      line-height: 1.5;
+      background: #fafafa;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Frequently Asked Questions</h1>
-    
-    <div class="faq-item">
-      <div class="faq-question">Question 1: (Your Question Here)</div>
-      <div class="faq-answer">
-        <p>Answer for question 1. Replace this text with your answer.</p>
+    <div class="header">
+      <h1>FAQ - Scooter Hack</h1>
+    </div>
+
+    <!-- Language Toggle Buttons -->
+    <div class="language-toggle">
+      <button id="btn-en">English</button>
+      <button id="btn-de">Deutsch</button>
+    </div>
+
+    <!-- FAQ Content in English -->
+    <div class="faq-section lang-en">
+      <div class="faq-item">
+        <div class="faq-question">How much does it cost?</div>
+        <div class="faq-answer">
+          <p>The hack currently costs a fair and simple 10€</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">What exactly am I buying?</div>
+        <div class="faq-answer">
+          <p>After purchase, you'll receive the Niu Scooter Hacking App as an APK file, a detailed step-by-step tutorial on how to hack your scooter</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">What other benefits does it have other than being faster?</div>
+        <div class="faq-answer">
+          <p>It also unlocks cruise control, instant start (no need to kick yourself when starting) and it activates the Halo Ring Light of your scooter!</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">How fast does my scooter go after the hack?</div>
+        <div class="faq-answer">
+          <p>
+            KQi2 Pro: 28-32 km/h<br>
+            KQi3 Sport: 28-32 km/h<br>
+            KQi3 Pro: 32-35 km/h<br>
+            KQi3 Max: 38 km/h<br>
+            KQi 300x: 38 km/h<br>
+            These are all of the models that work and their speeds. The KQi 300p is currently in progress. 2025 models work as well.
+          </p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Will it work if I already made an update?</div>
+        <div class="faq-answer">
+          <p>Yes, absolutely. The hack still works if you already updated your scooter, that is nothing to worry about!</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">How long does it take, and is it complicated?</div>
+        <div class="faq-answer">
+          <p>The whole process takes around 15 minutes and is very simple. If any questions or problems occur I will always be there for you to help and figure everything out.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Does it work on iOS?</div>
+        <div class="faq-answer">
+          <p>Currently, it only works on Android phones or tablets. However, borrowing one is enough. After the hack was successful you can go back to using the iOS App normally.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">How can I trust you?</div>
+        <div class="faq-answer">
+          <p>I have had over 20 customers, and so far everyone was very happy and it worked for everyone. You can look into the reviews channel of the discord server, most reviews are in German but you could translate them if you want.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">How can I pay?</div>
+        <div class="faq-answer">
+          <p>
+            I accept PayPal Family and Friends, where you can send the money directly to me.<br>
+            I also accept Gift Cards for Amazon or Paysafecards for my German clients. Just open a ticket and we will figure out the payment you want to use.
+          </p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Can my scooter break if I hack it?</div>
+        <div class="faq-answer">
+          <p>
+            The scooters are built for these speeds, and the hack simply changes the software region so you can unlock the full potential of your scooter, therefore it is not more risky to hack it, because the scooters are made for the speeds anyway.
+          </p>
+        </div>
       </div>
     </div>
-    
-    <div class="faq-item">
-      <div class="faq-question">Question 2: (Your Question Here)</div>
-      <div class="faq-answer">
-        <p>Answer for question 2. Replace this text with your answer.</p>
+
+    <!-- FAQ Content in German -->
+    <div class="faq-section lang-de" style="display: none;">
+      <div class="faq-item">
+        <div class="faq-question">Wie viel kostet es?</div>
+        <div class="faq-answer">
+          <p>Der Hack kostet derzeit einen fairen Preis von 10€</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Was kaufe ich eigentlich?</div>
+        <div class="faq-answer">
+          <p>Nach dem Kauf erhältst du die Niu Scooter Hacking App als APK-Datei sowie eine ausführliche Schritt-für-Schritt-Anleitung, wie du deinen Scooter hacken kannst</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Welche weiteren Vorteile hat er, außer schneller zu sein?</div>
+        <div class="faq-answer">
+          <p>Er schaltet zudem den Tempomat frei, ermöglicht einen Sofortstart (kein Anschub mehr notwendig) und aktiviert das Halo-Ringlicht deines Scooters!</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Wie schnell fährt mein Scooter nach dem Hack?</div>
+        <div class="faq-answer">
+          <p>
+            KQi2 Pro: 28-32 km/h<br>
+            KQi3 Sport: 28-32 km/h<br>
+            KQi3 Pro: 32-35 km/h<br>
+            KQi3 Max: 38 km/h<br>
+            KQi 300x: 38 km/h<br>
+            Dies sind alle Modelle, die funktionieren, und ihre jeweiligen Geschwindigkeiten. Der KQi 300p ist derzeit in Arbeit. Auch 2025 Modelle funktionieren.
+          </p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Funktioniert es, wenn ich bereits ein Update durchgeführt habe?</div>
+        <div class="faq-answer">
+          <p>Ja, absolut. Der Hack funktioniert auch, wenn du deinen Scooter bereits aktualisiert hast – das ist kein Grund zur Sorge!</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Wie lange dauert es und ist es kompliziert?</div>
+        <div class="faq-answer">
+          <p>Der gesamte Prozess dauert etwa 15 Minuten und ist sehr einfach. Falls Fragen oder Probleme auftreten, stehe ich dir stets zur Verfügung, um alles zu klären.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Funktioniert es auf iOS?</div>
+        <div class="faq-answer">
+          <p>Derzeit funktioniert es nur auf Android-Smartphones oder -Tablets. Ein geliehenes Gerät genügt. Nachdem der Hack erfolgreich war, kannst du die iOS-App normal weiterverwenden.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Wie kann ich dir vertrauen?</div>
+        <div class="faq-answer">
+          <p>
+            Ich hatte bereits über 20 Kunden und bisher war jeder sehr zufrieden – es hat bei allen funktioniert. Schau dir den Review-Kanal des Discord-Servers an; die meisten Bewertungen sind zwar auf Deutsch, können aber übersetzt werden, wenn du möchtest.
+          </p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Wie kann ich bezahlen?</div>
+        <div class="faq-answer">
+          <p>
+            Ich akzeptiere PayPal Family and Friends, über das du mir das Geld direkt senden kannst.<br>
+            Zudem akzeptiere ich Amazon-Geschenkkarten oder Paysafecards für meine deutschen Kunden. Öffne einfach ein Ticket, und wir klären, welche Zahlungsart du nutzen möchtest.
+          </p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Kann mein Scooter kaputtgehen, wenn ich ihn hacke?</div>
+        <div class="faq-answer">
+          <p>
+            Die Scooter sind auf diese Geschwindigkeiten ausgelegt, und der Hack ändert lediglich die Software-Region, um das volle Potenzial deines Scooters freizuschalten. Daher ist es nicht riskanter, ihn zu hacken – die Scooter sind ohnehin für diese Geschwindigkeiten gebaut.
+          </p>
+        </div>
       </div>
     </div>
-    
-    <!-- Add more FAQ items as needed -->
-    
   </div>
 
   <script>
-    // JavaScript to toggle answer visibility when a question is clicked
+    // Toggle FAQ Answers
     document.querySelectorAll('.faq-question').forEach(function(question) {
       question.addEventListener('click', function() {
         var answer = this.nextElementSibling;
-        // Toggle the display style
         answer.style.display = (answer.style.display === "block") ? "none" : "block";
       });
+    });
+
+    // Language Toggle Functionality
+    var btnEn = document.getElementById('btn-en');
+    var btnDe = document.getElementById('btn-de');
+    var enSection = document.querySelector('.lang-en');
+    var deSection = document.querySelector('.lang-de');
+
+    btnEn.addEventListener('click', function() {
+      enSection.style.display = "block";
+      deSection.style.display = "none";
+    });
+
+    btnDe.addEventListener('click', function() {
+      enSection.style.display = "none";
+      deSection.style.display = "block";
     });
   </script>
 </body>
